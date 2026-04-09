@@ -149,7 +149,7 @@ export default function ProdukDetail() {
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-orange-500 text-white font-bold text-lg hover:bg-orange-600 transform hover:-translate-y-0.5 transition-all shadow-lg hover:shadow-orange-500/30"
                 >
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.248 18.348c-.088.087-.203.131-.318.131s-.23-.044-.318-.131l-2.612-2.612-2.612 2.612a.449.449 0 01-.636 0 .449.449 0 010-.636l2.612-2.612-2.612-2.612a.449.449 0 010-.636.449.449 0 01.636 0L12 14.464l2.612-2.612a.449.449 0 01.636 0 .449.449 0 010 .636l-2.612 2.612 2.612 2.612a.449.449 0 010 .636zM16 10H8a1 1 0 110-2h8a1 1 0 110 2zm0-4H8a1 1 0 110-2h8a1 1 0 110 2z"/></svg>
+                  <img src="https://emping.web.id/wp-content/uploads/Shopee-Logo-1.png" alt="Shopee Logo" className="w-6 h-6 object-contain scale-125" />
                   Beli via Shopee
                 </a>
                 

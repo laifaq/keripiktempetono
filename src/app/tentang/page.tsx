@@ -59,8 +59,8 @@ export default function TentangPage() {
             <div className="order-1 md:order-2">
                 <div className="relative aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image 
-                        src="/images/hero-banner.png" 
-                        alt="Produksi Keripik Tempe Tono" 
+                        src="https://down-id.img.susercontent.com/file/id-11134207-7rbk4-mafmzezm5stab6@resize_w900_nl.webp" 
+                        alt="Koleksi Keripik Tempe Tono" 
                         fill 
                         className="object-cover"
                     />

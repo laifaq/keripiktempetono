@@ -70,12 +70,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/admin"
-              className="ml-3 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 text-white text-sm font-semibold shadow-md hover:shadow-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-200"
-            >
-              Admin
-            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -125,12 +119,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/admin"
-              className="mx-4 mt-2 px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 text-white text-sm font-semibold text-center shadow-md"
-            >
-              Admin Panel
-            </Link>
           </div>
         </div>
       </div>
