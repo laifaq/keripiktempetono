@@ -1,0 +1,88 @@
+import { Product } from "@/types";
+
+export const initialProducts: Product[] = [
+  {
+    slug: "keripik-tempe-original",
+    name: "Keripik Tempe Original",
+    price: 25000,
+    discount: 20,
+    imageUrl: "/images/product-original.png",
+    description:
+      "Keripik tempe original dengan rasa gurih khas tempe pilihan. Digoreng renyah dengan bumbu rahasia turun-temurun yang membuat rasanya tak terlupakan. Cocok untuk camilan sehari-hari maupun oleh-oleh khas Malang.",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/2BAo62R1jO",
+    popular: true,
+    sold: 1250,
+    archived: false,
+  },
+  {
+    slug: "keripik-tempe-balado",
+    name: "Keripik Tempe Balado",
+    price: 28000,
+    discount: 15,
+    imageUrl: "/images/product-balado.png",
+    description:
+      "Keripik tempe dengan bumbu balado pedas yang menggugah selera. Perpaduan rasa pedas, manis, dan gurih yang pas di lidah. Sensasi pedasnya bikin ketagihan!",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/3CAp73S2kP",
+    popular: true,
+    sold: 980,
+    archived: false,
+  },
+  {
+    slug: "keripik-tempe-bbq",
+    name: "Keripik Tempe BBQ",
+    price: 28000,
+    discount: 10,
+    imageUrl: "/images/product-bbq.png",
+    description:
+      "Keripik tempe dengan bumbu BBQ smoky yang unik. Aroma panggang yang khas membuat camilan ini cocok dinikmati kapan saja. Rasa western dengan sentuhan lokal.",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/4DBq84T3lQ",
+    popular: true,
+    sold: 870,
+    archived: false,
+  },
+  {
+    slug: "keripik-tempe-keju",
+    name: "Keripik Tempe Keju",
+    price: 30000,
+    discount: 25,
+    imageUrl: "/images/product-keju.png",
+    description:
+      "Keripik tempe dengan taburan bubuk keju premium yang creamy. Rasa gurih keju yang meleleh di setiap gigitan. Favorit anak-anak dan dewasa!",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/5ECr95U4mR",
+    popular: true,
+    sold: 1100,
+    archived: false,
+  },
+  {
+    slug: "keripik-tempe-pedas-manis",
+    name: "Keripik Tempe Pedas Manis",
+    price: 27000,
+    discount: 18,
+    imageUrl: "/images/product-pedas-manis.png",
+    description:
+      "Keripik tempe dengan balutan caramel pedas manis yang adiktif. Perpaduan rasa manis gula aren dan cabai pilihan membuat rasa unik yang bikin nagih.",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/6FDs06V5nS",
+    popular: false,
+    sold: 750,
+    archived: false,
+  },
+  {
+    slug: "keripik-tempe-bawang",
+    name: "Keripik Tempe Bawang",
+    price: 25000,
+    discount: 12,
+    imageUrl: "/images/product-bawang.png",
+    description:
+      "Keripik tempe dengan taburan bawang goreng renyah yang gurih. Aroma bawang yang harum dan rasa yang classic. Camilan tradisional dengan kualitas premium.",
+    weight: "200g",
+    shopeeUrl: "https://s.shopee.co.id/7GEt17W6oT",
+    popular: false,
+    sold: 650,
+    archived: false,
+  },
+];
