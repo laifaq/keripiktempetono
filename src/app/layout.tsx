@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "Keripik Tempe Tono | Camilan Khas Malang",
   description: "Keripik Tempe TONO - Camilan khas Kota Malang dengan kualitas terbaik dan rasa yang konsisten. Renyah, gurih, dan kriuknya nendang!",
+  icons: {
+    icon: "https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp",
+  },
 };
 
 export default function RootLayout({

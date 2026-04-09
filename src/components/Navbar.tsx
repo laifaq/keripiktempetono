@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "Beranda" },
   { href: "/katalog", label: "Katalog" },
+  { href: "/galeri", label: "Galeri" },
   { href: "/kontak", label: "Kontak" },
   { href: "/tentang", label: "Tentang" },
 ];
@@ -41,10 +42,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <span className="text-white font-extrabold text-lg md:text-xl">
-                T
-              </span>
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow overflow-hidden">
+              <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp" alt="Keripik Tempe Tono Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-base md:text-lg text-amber-900 leading-tight">

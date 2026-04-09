@@ -8,8 +8,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                <span className="text-white font-extrabold text-lg">T</span>
+              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center overflow-hidden">
+                <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp" alt="Keripik Tempe Tono Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="font-bold text-lg text-white">
@@ -33,6 +33,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Beranda" },
                 { href: "/katalog", label: "Katalog" },
+                { href: "/galeri", label: "Galeri" },
                 { href: "/kontak", label: "Kontak" },
                 { href: "/tentang", label: "Tentang" },
               ].map((link) => (
