@@ -2,6 +2,20 @@
 
 @theme {
   --font-sans: var(--font-inter);
+
+  /* Overriding default amber to match new brand palette */
+  /* Palette: 3d74b6 (Blue), fbf5de (Cream), eac8a6 (Beige), dc3c22 (Red) */
+  --color-amber-50: #fbf5de;
+  --color-amber-100: color-mix(in srgb, #fbf5de 50%, #eac8a6);
+  --color-amber-200: #eac8a6;
+  --color-amber-300: color-mix(in srgb, #eac8a6 50%, #dc3c22);
+  --color-amber-400: color-mix(in srgb, white 20%, #dc3c22);
+  --color-amber-500: #dc3c22;
+  --color-amber-600: color-mix(in srgb, black 15%, #dc3c22);
+  --color-amber-700: color-mix(in srgb, black 30%, #dc3c22);
+  --color-amber-800: #3d74b6;
+  --color-amber-900: color-mix(in srgb, black 20%, #3d74b6);
+  --color-amber-950: color-mix(in srgb, black 40%, #3d74b6);
 }
 
 @layer base {
@@ -20,14 +34,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fbf5de; /* Cream */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d97706; /* amber-600 */
+  background: #dc3c22; /* Red */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b45309; /* amber-700 */
+  background: color-mix(in srgb, black 15%, #dc3c22); /* Darker Red */
 }
