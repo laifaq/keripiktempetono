@@ -13,7 +13,7 @@ export default function HeroBanner() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-950/90 via-amber-900/75 to-amber-800/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#9B0F06]/90 via-[#9B0F06]/75 to-[#9B0F06]/50" />
 
       {/* Floating decorative elements */}
       <div className="absolute top-20 right-10 w-32 h-32 md:w-64 md:h-64 rounded-full bg-amber-400/10 blur-3xl animate-pulse" />
@@ -24,7 +24,7 @@ export default function HeroBanner() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400/20 border border-amber-400/30 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-            <span className="text-amber-200 text-xs md:text-sm font-medium">
+            <span className="text-white text-xs md:text-sm font-medium">
               Oleh-oleh Khas Malang
             </span>
           </div>
@@ -32,15 +32,15 @@ export default function HeroBanner() {
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
             Keripik Tempe{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-400">
+            <span className="text-white">
               Tono
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-amber-100/90 font-light leading-relaxed max-w-lg">
+          <p className="text-lg sm:text-xl md:text-2xl text-white font-light leading-relaxed max-w-lg">
             Camilan khas Malang,{" "}
-            <span className="font-semibold text-amber-300">
+            <span className="font-semibold text-white">
               kriuknya nendang!
             </span>
           </p>
@@ -50,7 +50,7 @@ export default function HeroBanner() {
             <Link
               href="/katalog"
               id="cta-katalog"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 text-amber-950 font-bold text-base md:text-lg shadow-xl hover:shadow-2xl hover:from-amber-300 hover:to-amber-400 transform hover:-translate-y-0.5 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-800 to-amber-900 text-white font-bold text-base md:text-lg shadow-xl hover:shadow-2xl hover:from-amber-900 hover:to-amber-950 transform hover:-translate-y-0.5 transition-all duration-300"
             >
               Lihat Produk
               <svg
@@ -71,7 +71,7 @@ export default function HeroBanner() {
               href="https://wa.me/6285733325250?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Keripik%20Tempe%20Tono"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border-2 border-amber-400/40 text-amber-100 font-semibold text-base md:text-lg hover:bg-amber-400/10 hover:border-amber-400/60 transform hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border-2 border-amber-400/40 text-white font-semibold text-base md:text-lg hover:bg-amber-400/10 hover:border-amber-400/60 transform hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm"
             >
               <svg
                 className="w-5 h-5 text-green-400"
@@ -88,28 +88,28 @@ export default function HeroBanner() {
           {/* Stats */}
           <div className="flex gap-8 pt-4">
             <div>
-              <p className="text-2xl md:text-3xl font-bold text-amber-300">
+              <p className="text-2xl md:text-3xl font-bold text-white">
                 1000+
               </p>
-              <p className="text-xs md:text-sm text-amber-200/60">
+              <p className="text-xs md:text-sm text-white">
                 Pelanggan Puas
               </p>
             </div>
             <div className="w-px bg-amber-600/40" />
             <div>
-              <p className="text-2xl md:text-3xl font-bold text-amber-300">
-                6+
+              <p className="text-2xl md:text-3xl font-bold text-white">
+                20+
               </p>
-              <p className="text-xs md:text-sm text-amber-200/60">
+              <p className="text-xs md:text-sm text-white">
                 Varian Rasa
               </p>
             </div>
             <div className="w-px bg-amber-600/40" />
             <div>
-              <p className="text-2xl md:text-3xl font-bold text-amber-300">
-                ⭐ 4.9
+              <p className="text-2xl md:text-3xl font-bold text-white">
+                ⭐ 5.0
               </p>
-              <p className="text-xs md:text-sm text-amber-200/60">
+              <p className="text-xs md:text-sm text-white">
                 Rating Shopee
               </p>
             </div>

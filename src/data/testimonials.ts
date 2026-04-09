@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 3,
     name: "Dewi Maharani",
-    rating: 4,
+    rating: 5,
     comment:
       "Yang rasa keju enak banget! Anak saya suka. Teksturnya kriuk tipis, beda dari keripik tempe biasa. Pengiriman juga cepat via Shopee.",
     date: "2026-02-28",
