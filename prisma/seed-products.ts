@@ -13,7 +13,9 @@ async function main() {
       weight: "200g",
       shopeeUrl: "https://shopee.co.id",
       popular: true,
+      bestSeller: true,
       sold: 1250,
+      archived: false,
     },
     {
       name: "Keripik Tempe Pedas Daun Jeruk",
@@ -25,7 +27,9 @@ async function main() {
       weight: "200g",
       shopeeUrl: "https://shopee.co.id",
       popular: true,
+      bestSeller: true,
       sold: 850,
+      archived: false,
     },
     {
       name: "Keripik Tempe Barbeque",
@@ -37,7 +41,9 @@ async function main() {
       weight: "200g",
       shopeeUrl: "https://shopee.co.id",
       popular: false,
+      bestSeller: false,
       sold: 450,
+      archived: false,
     },
     {
       name: "Keripik Tempe Keju",
@@ -49,7 +55,9 @@ async function main() {
       weight: "200g",
       shopeeUrl: "https://shopee.co.id",
       popular: false,
+      bestSeller: false,
       sold: 600,
+      archived: false,
     }
   ];
 
