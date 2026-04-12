@@ -13,7 +13,7 @@ export default function TambahProdukPage() {
   const getProductBySlug = useProductStore((state) => state.getProductBySlug);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (product: Product) => {
+  const handleSubmit = async (product: Product) => {
     setIsLoading(true);
     
     // Check if slug already exists
@@ -23,12 +23,16 @@ export default function TambahProdukPage() {
        return;
     }
 
-    // Simulate API delay
-    setTimeout(() => {
-      addProduct(product);
+    try {
+      await addProduct(product);
       setIsLoading(false);
-      router.push("/admin");
-    }, 600);
+      alert("Produk berhasil ditambahkan!");
+      router.push("/admin/produk");
+    } catch (error) {
+      console.error(error);
+      alert("Gagal menyimpan produk. Pastikan koneksi internet stabil dan database sudah di-push.");
+      setIsLoading(false);
+    }
   };
 
   return (
