@@ -9,14 +9,14 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const getActiveProducts = useProductStore((state) => state.getActiveProducts);
+  const products = useProductStore((state) => state.products);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const activeProducts = getActiveProducts();
+  const activeProducts = products.filter(p => !p.archived);
   const topProducts = activeProducts
     .sort((a, b) => b.sold - a.sold)
     .slice(0, 4);
