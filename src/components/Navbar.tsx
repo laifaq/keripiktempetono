@@ -3,6 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+<<<<<<< HEAD
+=======
+import { useSettingsStore } from "@/store/useSettingsStore";
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
 const navLinks = [
   { href: "/", label: "Beranda" },
@@ -16,6 +20,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+<<<<<<< HEAD
+=======
+  const getSetting = useSettingsStore(state => state.getSetting);
+
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +41,12 @@ export default function Navbar() {
     setIsOpen(false);
   }, [pathname]);
 
+<<<<<<< HEAD
+=======
+  const brandName = getSetting('brand_name', 'Keripik Tempe Tono');
+  const brandLogo = getSetting('brand_logo', 'https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp');
+
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   return (
     <nav
       id="main-navbar"
@@ -43,6 +61,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow overflow-hidden">
+<<<<<<< HEAD
               <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp" alt="Keripik Tempe Tono Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
@@ -51,6 +70,16 @@ export default function Navbar() {
               </span>
               <span className="text-[10px] md:text-xs font-semibold text-amber-600 tracking-widest uppercase">
                 TONO
+=======
+              <img src={brandLogo} alt={`${brandName} Logo`} className="w-full h-full object-cover" />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-bold text-base md:text-lg text-amber-900 leading-tight">
+                {brandName.includes(' ') ? brandName.split(' ').slice(0, -1).join(' ') : brandName}
+              </span>
+              <span className="text-[10px] md:text-xs font-semibold text-amber-600 tracking-widest uppercase">
+                {brandName.includes(' ') ? brandName.split(' ').slice(-1) : ''}
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
               </span>
             </div>
           </Link>

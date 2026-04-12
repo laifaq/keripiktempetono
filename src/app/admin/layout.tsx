@@ -1,4 +1,8 @@
 import { Metadata } from "next";
+<<<<<<< HEAD
+=======
+import AdminLayoutClient from "./AdminLayoutClient";
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
 export const metadata: Metadata = {
   title: "Admin Panel | Keripik Tempe Tono",
@@ -10,6 +14,7 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
+<<<<<<< HEAD
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Note: The main layout already has a Navbar. In a real app we might want a separate clear layout,
@@ -22,4 +27,7 @@ export default function AdminLayout({
       </div>
     </div>
   );
+=======
+  return <AdminLayoutClient>{children}</AdminLayoutClient>;
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 }

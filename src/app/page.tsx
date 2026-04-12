@@ -9,15 +9,24 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+<<<<<<< HEAD
   const getActiveProducts = useProductStore((state) => state.getActiveProducts);
+=======
+  const products = useProductStore((state) => state.products);
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+<<<<<<< HEAD
   const activeProducts = getActiveProducts();
   const topProducts = activeProducts
+=======
+  const topProducts = products
+    .filter(p => !p.archived)
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
     .sort((a, b) => b.sold - a.sold)
     .slice(0, 4);
 
@@ -47,6 +56,83 @@ export default function Home() {
               </Link>
             </div>
 
+<<<<<<< HEAD
+=======
+            {/* Store Locations Section */}
+            <div className="mt-20 border-t border-gray-100 pt-16">
+              <div className="text-center mb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Kunjungi Outlet Kami</h3>
+                <p className="text-gray-500 mt-2">Temukan kami di lokasi-lokasi strategis di Kota Malang.</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                {/* Store 1 */}
+                <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-md transition-all duration-300">
+                  <div className="h-56 bg-gray-100 w-full relative">
+                    <iframe 
+                      src="https://maps.google.com/maps?q=-7.9749448,112.6034215&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                      width="100%" 
+                      height="100%" 
+                      className="border-none" 
+                      allowFullScreen={true} 
+                      loading="lazy" 
+                      title="Lokasi Outlet Utama Sukun"
+                    ></iframe>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-2">
+                       <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                       <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
+                    </div>
+                    <h4 className="font-bold text-xl text-gray-900">Outlet Utama (Sukun)</h4>
+                    <p className="text-sm text-gray-500 mt-2 leading-relaxed">Jl. Pisang Agung III No.14C, Pisang Candi, Kec. Sukun, Kota Malang.</p>
+                    <a 
+                      href="https://maps.app.goo.gl/cvA1iWhrQwJUdymr6" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-5 text-amber-600 font-bold text-sm hover:gap-3 transition-all"
+                    >
+                      Buka di Google Maps
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Store 2 */}
+                <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-md transition-all duration-300">
+                  <div className="h-56 bg-gray-100 w-full relative">
+                    <iframe 
+                      src="https://maps.google.com/maps?q=-7.972811,112.6367534&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                      width="100%" 
+                      height="100%" 
+                      className="border-none" 
+                      allowFullScreen={true} 
+                      loading="lazy" 
+                      title="Lokasi Outlet Pasar Klojen"
+                    ></iframe>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-2">
+                       <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                       <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
+                    </div>
+                    <h4 className="font-bold text-xl text-gray-900">Outlet Pasar Klojen</h4>
+                    <p className="text-sm text-gray-500 mt-2 leading-relaxed">Pasar Klojen, Jl. Cokroaminoto, Klojen, Kota Malang.</p>
+                    <a 
+                      href="https://maps.app.goo.gl/1xjdU3E31H7MKd1x6" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 mt-5 text-amber-600 font-bold text-sm hover:gap-3 transition-all"
+                    >
+                      Buka di Google Maps
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
             {/* Home Instagram Section */}
             <div className="mt-20 border-t border-gray-100 pt-16">
               <div className="text-center mb-8">
@@ -105,7 +191,11 @@ export default function Home() {
             
             {/* Quick Contact Cards */}
             <div className="grid grid-cols-2 gap-4">
+<<<<<<< HEAD
               <a href="https://wa.me/6285733325250" target="_blank" rel="noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+=======
+              <a href="https://wa.me/6285733325250" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm overflow-hidden p-2">
                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/3840px-WhatsApp.svg.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />
                 </div>
@@ -115,7 +205,11 @@ export default function Home() {
                 </div>
               </a>
               
+<<<<<<< HEAD
                <a href="https://s.shopee.co.id/2BAo62R1jO" target="_blank" rel="noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+=======
+               <a href="https://s.shopee.co.id/2BAo62R1jO" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm overflow-hidden p-2">
                   <img src="https://emping.web.id/wp-content/uploads/Shopee-Logo-1.png" alt="Shopee Icon" className="w-full h-full object-contain" />
                 </div>
@@ -125,7 +219,11 @@ export default function Home() {
                 </div>
               </a>
 
+<<<<<<< HEAD
               <a href="https://www.instagram.com/keripiktempetono" target="_blank" rel="noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+=======
+              <a href="https://www.instagram.com/keripiktempetono" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm overflow-hidden p-2">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon" className="w-full h-full object-contain" />
                 </div>
@@ -135,7 +233,11 @@ export default function Home() {
                 </div>
               </a>
 
+<<<<<<< HEAD
               <a href="https://www.google.com/maps/place/keripik+tempe+tono/" target="_blank" rel="noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+=======
+              <a href="https://maps.app.goo.gl/f5z7uL3Kg3EJDR9d9" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>

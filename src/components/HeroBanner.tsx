@@ -1,15 +1,38 @@
+<<<<<<< HEAD
 import Link from "next/link";
 
 export default function HeroBanner() {
+=======
+"use client";
+
+import Link from "next/link";
+import { useSettingsStore } from "@/store/useSettingsStore";
+
+export default function HeroBanner() {
+  const getSetting = useSettingsStore(state => state.getSetting);
+  
+  const brandName = getSetting('brand_name', 'Keripik Tempe Tono');
+  const heroTagline = getSetting('hero_tagline', 'Camilan khas Malang, kriuknya nendang!');
+  const heroImage = getSetting('hero_image', '/images/hero-banner.png');
+  const socialWa = getSetting('social_wa', '085733325250');
+
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   return (
     <section
       id="hero-banner"
       className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden"
     >
       {/* Background Image */}
+<<<<<<< HEAD
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-banner.png')" }}
+=======
+      <img
+        src={heroImage}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover transition-all duration-700 pointer-events-none"
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
       />
 
       {/* Overlay */}
@@ -31,18 +54,40 @@ export default function HeroBanner() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
+<<<<<<< HEAD
             Keripik Tempe{" "}
             <span className="text-white">
               Tono
             </span>
+=======
+            {brandName.includes(' ') ? (
+              <>
+                {brandName.split(' ').slice(0, -1).join(' ')}{" "}
+                <span className="text-white">
+                  {brandName.split(' ').slice(-1)}
+                </span>
+              </>
+            ) : brandName}
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-white font-light leading-relaxed max-w-lg">
+<<<<<<< HEAD
             Camilan khas Malang,{" "}
             <span className="font-semibold text-white">
               kriuknya nendang!
             </span>
+=======
+            {heroTagline.includes(',') ? (
+              <>
+                {heroTagline.split(',')[0]},{" "}
+                <span className="font-semibold text-white">
+                  {heroTagline.split(',')[1]}
+                </span>
+              </>
+            ) : heroTagline}
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
           </p>
 
           {/* CTA Buttons */}
@@ -68,7 +113,11 @@ export default function HeroBanner() {
               </svg>
             </Link>
             <a
+<<<<<<< HEAD
               href="https://wa.me/6285733325250?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Keripik%20Tempe%20Tono"
+=======
+              href={`https://wa.me/62${socialWa.replace(/^0/, '')}?text=Halo,%20saya%20ingin%20bertanya%20tentang%20${brandName}`}
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border-2 border-amber-400/40 text-white font-semibold text-base md:text-lg hover:bg-amber-400/10 hover:border-amber-400/60 transform hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm"

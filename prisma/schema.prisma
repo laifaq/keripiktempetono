@@ -19,6 +19,10 @@ model Product {
   weight      String
   shopeeUrl   String
   popular     Boolean  @default(false)
+<<<<<<< HEAD
+=======
+  bestSeller  Boolean  @default(false)
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   sold        Int      @default(0)
   archived    Boolean  @default(false)
   createdAt   DateTime @default(now())
@@ -31,3 +35,13 @@ model AdminUser {
   password  String
   createdAt DateTime @default(now())
 }
+<<<<<<< HEAD
+=======
+
+model Setting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt
+}
+>>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
