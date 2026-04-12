@@ -22,10 +22,7 @@ export default function ProductForm({ initialData, onSubmit, isLoading }: Produc
     weight: "",
     shopeeUrl: "",
     popular: false,
-<<<<<<< HEAD
-=======
     bestSeller: false,
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
     sold: 0,
     archived: false,
   });
@@ -228,20 +225,6 @@ export default function ProductForm({ initialData, onSubmit, isLoading }: Produc
         />
       </div>
 
-<<<<<<< HEAD
-      <div className="flex items-center gap-2 bg-amber-50 p-4 rounded-xl border border-amber-100">
-        <input
-          type="checkbox"
-          id="popular"
-          name="popular"
-          checked={formData.popular || false}
-          onChange={handleChange}
-          className="w-5 h-5 text-amber-600 rounded focus:ring-amber-500"
-        />
-        <label htmlFor="popular" className="text-sm font-medium text-amber-900 cursor-pointer">
-          Tandai sebagai Produk Populer
-        </label>
-=======
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex items-center gap-3 bg-amber-50 p-4 rounded-2xl border border-amber-100 transition-all hover:shadow-sm">
           <input
@@ -270,7 +253,6 @@ export default function ProductForm({ initialData, onSubmit, isLoading }: Produc
             🔥 Badge Terlaris
           </label>
         </div>
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
       </div>
 
       <div className="pt-4 flex justify-end gap-3 border-t border-gray-100">

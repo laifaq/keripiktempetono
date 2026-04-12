@@ -34,7 +34,7 @@ export default function Home() {
               title="Produk Terlaris"
               subtitle="Pilihan favorit pelanggan Keripik Tempe Tono yang wajib kamu coba!"
             />
-            
+
             <div className="mt-12 text-center">
               <Link
                 href="/katalog"
@@ -53,31 +53,31 @@ export default function Home() {
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Kunjungi Outlet Kami</h3>
                 <p className="text-gray-500 mt-2">Temukan kami di lokasi-lokasi strategis di Kota Malang.</p>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 {/* Store 1 */}
                 <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-md transition-all duration-300">
                   <div className="h-56 bg-gray-100 w-full relative">
-                    <iframe 
-                      src="https://maps.google.com/maps?q=-7.9749448,112.6034215&t=&z=17&ie=UTF8&iwloc=&output=embed" 
-                      width="100%" 
-                      height="100%" 
-                      className="border-none" 
-                      allowFullScreen={true} 
-                      loading="lazy" 
+                    <iframe
+                      src="https://maps.google.com/maps?q=-7.9749448,112.6034215&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="100%"
+                      className="border-none"
+                      allowFullScreen={true}
+                      loading="lazy"
                       title="Lokasi Outlet Utama Sukun"
                     ></iframe>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-2">
-                       <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                       <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
+                      <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                      <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
                     </div>
                     <h4 className="font-bold text-xl text-gray-900">Outlet Utama (Sukun)</h4>
                     <p className="text-sm text-gray-500 mt-2 leading-relaxed">Jl. Pisang Agung III No.14C, Pisang Candi, Kec. Sukun, Kota Malang.</p>
-                    <a 
-                      href="https://maps.app.goo.gl/cvA1iWhrQwJUdymr6" 
-                      target="_blank" 
+                    <a
+                      href="https://maps.app.goo.gl/cvA1iWhrQwJUdymr6"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 mt-5 text-amber-600 font-bold text-sm hover:gap-3 transition-all"
                     >
@@ -90,26 +90,26 @@ export default function Home() {
                 {/* Store 2 */}
                 <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-md transition-all duration-300">
                   <div className="h-56 bg-gray-100 w-full relative">
-                    <iframe 
-                      src="https://maps.google.com/maps?q=-7.972811,112.6367534&t=&z=17&ie=UTF8&iwloc=&output=embed" 
-                      width="100%" 
-                      height="100%" 
-                      className="border-none" 
-                      allowFullScreen={true} 
-                      loading="lazy" 
+                    <iframe
+                      src="https://maps.google.com/maps?q=-7.972811,112.6367534&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="100%"
+                      className="border-none"
+                      allowFullScreen={true}
+                      loading="lazy"
                       title="Lokasi Outlet Pasar Klojen"
                     ></iframe>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-2">
-                       <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                       <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
+                      <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                      <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Buka Sekarang</span>
                     </div>
                     <h4 className="font-bold text-xl text-gray-900">Outlet Pasar Klojen</h4>
                     <p className="text-sm text-gray-500 mt-2 leading-relaxed">Pasar Klojen, Jl. Cokroaminoto, Klojen, Kota Malang.</p>
-                    <a 
-                      href="https://maps.app.goo.gl/1xjdU3E31H7MKd1x6" 
-                      target="_blank" 
+                    <a
+                      href="https://maps.app.goo.gl/1xjdU3E31H7MKd1x6"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 mt-5 text-amber-600 font-bold text-sm hover:gap-3 transition-all"
                     >
@@ -128,11 +128,11 @@ export default function Home() {
                 <p className="text-gray-500 text-sm">Ikuti keseruan kami di @keripiktempetono</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div 
+                <div
                   className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden p-1 flex justify-center"
                   dangerouslySetInnerHTML={{ __html: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKej3HjyVcn/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DKej3HjyVcn/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">View on Instagram</a></div></blockquote>` }}
                 />
-                <div 
+                <div
                   className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden p-1 flex justify-center"
                   dangerouslySetInnerHTML={{ __html: `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKWrX9ozYYV/" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DKWrX9ozYYV/" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">View on Instagram</a></div></blockquote>` }}
                 />
@@ -141,7 +141,7 @@ export default function Home() {
           </>
         ) : (
           <div className="h-96 flex items-center justify-center">
-             <div className="w-8 h-8 md:w-12 md:h-12 border-4 border-amber-200 border-t-amber-500 rounded-full animate-spin"></div>
+            <div className="w-8 h-8 md:w-12 md:h-12 border-4 border-amber-200 border-t-amber-500 rounded-full animate-spin"></div>
           </div>
         )}
         <Script src="//www.instagram.com/embed.js" strategy="afterInteractive" />
@@ -151,8 +151,8 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-amber-900 text-white relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-800 rounded-full blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
-         <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-700 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
-        
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-700 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -163,33 +163,33 @@ export default function Home() {
                 Tradisi Rasa Khas <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">Malang</span>
               </h2>
               <p className="text-lg text-amber-100/90 leading-relaxed">
-                Dimulai dari resep keluarga turun-temurun, Keripik Tempe Tono berkomitmen menghadirkan 
-                camilan autentik yang tidak hanya lezat tapi juga berkualitas. Kami menggunakan kedelai 
+                Dimulai dari resep keluarga turun-temurun, Keripik Tempe Tono berkomitmen menghadirkan
+                camilan autentik yang tidak hanya lezat tapi juga berkualitas. Kami menggunakan kedelai
                 pilihan dan bumbu rempah alami untuk menciptakan "kriuk" yang sempurna.
               </p>
-              
+
               <Link
                 href="/tentang"
                 className="inline-flex items-center text-amber-300 hover:text-amber-400 font-semibold gap-1 transition-colors"
               >
-                Baca selengkapnya 
+                Baca selengkapnya
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
               </Link>
             </div>
-            
+
             {/* Quick Contact Cards */}
             <div className="grid grid-cols-2 gap-4">
               <a href="https://wa.me/6285733325250" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm overflow-hidden p-2">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/3840px-WhatsApp.svg.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/3840px-WhatsApp.svg.png" alt="WhatsApp Icon" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-white">WhatsApp</h3>
                   <p className="text-xs text-amber-200">Chat & Order</p>
                 </div>
               </a>
-              
-               <a href="https://s.shopee.co.id/2BAo62R1jO" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
+
+              <a href="https://s.shopee.co.id/2BAo62R1jO" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-6 rounded-2xl border border-white/20 hover:bg-white/20 hover:-translate-y-1 transition-all flex flex-col items-center text-center gap-3 backdrop-blur-sm group">
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm overflow-hidden p-2">
                   <img src="https://emping.web.id/wp-content/uploads/Shopee-Logo-1.png" alt="Shopee Icon" className="w-full h-full object-contain" />
                 </div>

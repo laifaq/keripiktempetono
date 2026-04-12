@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import Link from "next/link";
-
-export default function Footer() {
-=======
 "use client";
 
 import { usePathname } from "next/navigation";
@@ -25,7 +20,6 @@ export default function Footer() {
   const socialShopee = getSetting('social_shopee', 'https://s.shopee.co.id/2BAo62R1jO');
   const mapsUrl = getSetting('maps_url', 'https://maps.app.goo.gl/f5z7uL3Kg3EJDR9d9');
 
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   return (
     <footer id="main-footer" className="bg-amber-950 text-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -34,16 +28,6 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center overflow-hidden">
-<<<<<<< HEAD
-                <img src="https://down-id.img.susercontent.com/file/id-11134233-7r98w-lsryht7jdcndec@resize_w160_nl.webp" alt="Keripik Tempe Tono Logo" className="w-full h-full object-cover" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg text-white">
-                  Keripik Tempe Tono
-                </h3>
-                <p className="text-xs text-amber-300 tracking-wider uppercase">
-                  Khas Malang
-=======
                 <img src={brandLogo} alt={`${brandName} Logo`} className="w-full h-full object-cover" />
               </div>
               <div>
@@ -52,7 +36,6 @@ export default function Footer() {
                 </h3>
                 <p className="text-xs text-amber-300 tracking-wider uppercase">
                   {brandName.toLowerCase().includes('tono') ? 'Khas Malang' : ''}
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 </p>
               </div>
             </div>
@@ -110,38 +93,23 @@ export default function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-<<<<<<< HEAD
-                Jl. Pisang Agung III No.14C, Pisang Candi, Kota Malang
-              </p>
-              <a
-                href="https://wa.me/6285733325250"
-=======
                 <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   {mapsAddress}
                 </a>
               </p>
               <a
                 href={`https://wa.me/62${socialWa.replace(/^0/, '')}`}
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/3840px-WhatsApp.svg.png" alt="WhatsApp" className="w-5 h-5 object-contain" />
-<<<<<<< HEAD
-                085733325250
-=======
                 {socialWa}
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
               </a>
             </div>
             <div className="flex gap-3 pt-2">
               <a
-<<<<<<< HEAD
-                href="https://www.instagram.com/keripiktempetono"
-=======
                 href={`https://www.instagram.com/${socialIg.replace('@', '')}`}
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-amber-800/50 flex items-center justify-center hover:bg-amber-700 transition-colors"
@@ -150,20 +118,7 @@ export default function Footer() {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" className="w-5 h-5 object-contain" />
               </a>
               <a
-<<<<<<< HEAD
-                href="https://www.tiktok.com/@keripiktempetono"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-amber-800/50 flex items-center justify-center hover:bg-amber-700 transition-colors"
-                aria-label="TikTok"
-              >
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/574/small/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" alt="TikTok" className="w-5 h-5 object-contain" />
-              </a>
-              <a
-                href="https://s.shopee.co.id/2BAo62R1jO"
-=======
                 href={socialShopee}
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-amber-800/50 flex items-center justify-center hover:bg-amber-700 transition-colors"
@@ -178,11 +133,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-amber-800/50 text-center">
           <p className="text-sm text-amber-300/60">
-<<<<<<< HEAD
-            &copy; {new Date().getFullYear()} Keripik Tempe Tono. Semua hak
-=======
             &copy; {new Date().getFullYear()} {brandName}. Semua hak
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
             dilindungi.
           </p>
         </div>
