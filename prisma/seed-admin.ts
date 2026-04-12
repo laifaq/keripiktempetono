@@ -3,11 +3,7 @@ const prisma = new PrismaClient()
 
 async function main() {
   const username = "admin";
-<<<<<<< HEAD
   const password = "admintono123"; // Ganti jika perlu
-=======
-  const password = "keripiktempetono123"; // Ganti jika perlu
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
   const admin = await prisma.adminUser.upsert({
     where: { username },

@@ -19,10 +19,7 @@ export async function PUT(
         weight: data.weight,
         shopeeUrl: data.shopeeUrl,
         popular: data.popular,
-<<<<<<< HEAD
-=======
         bestSeller: data.bestSeller,
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
         sold: data.sold,
         archived: data.archived,
       }

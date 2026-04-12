@@ -28,11 +28,7 @@ export default function AdminLoginPage() {
       if (response.ok) {
         // Simple local storage for demo purposes
         localStorage.setItem("admin_token", "logged_in");
-<<<<<<< HEAD
-        router.push("/admin/dashboard");
-=======
         router.push("/admin");
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
       } else {
         setError(data.message || "Login gagal");
       }

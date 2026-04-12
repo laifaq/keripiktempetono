@@ -26,21 +26,6 @@ export default function ProductCard({ product }: ProductCardProps) {
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
 
-<<<<<<< HEAD
-        {/* Discount Badge */}
-        {product.discount > 0 && (
-          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-xl bg-red-500 text-white text-xs font-bold shadow-md">
-            -{product.discount}%
-          </div>
-        )}
-
-        {/* Popular Badge */}
-        {product.popular && (
-          <div className="absolute top-3 right-3 px-2.5 py-1 rounded-xl bg-amber-500 text-white text-xs font-bold shadow-md">
-            ⭐ Populer
-          </div>
-        )}
-=======
         {/* Badges Container - Single Badge Display */}
         <div className="absolute top-3 inset-x-3 flex justify-between items-start pointer-events-none">
           <div className="flex flex-col gap-2">
@@ -59,7 +44,6 @@ export default function ProductCard({ product }: ProductCardProps) {
             ) : null}
           </div>
         </div>
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
@@ -70,13 +54,8 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
 
       {/* Content */}
-<<<<<<< HEAD
-      <div className="p-4 space-y-2">
-        <h3 className="font-semibold text-gray-900 text-sm md:text-base line-clamp-2 group-hover:text-amber-700 transition-colors">
-=======
       <div className="p-4 space-y-4">
         <h3 className="font-bold text-gray-900 text-sm md:text-base line-clamp-2 group-hover:text-amber-700 transition-colors h-10 md:h-12 flex items-center">
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
           {product.name}
         </h3>
 
@@ -91,19 +70,12 @@ export default function ProductCard({ product }: ProductCardProps) {
           )}
         </div>
 
-<<<<<<< HEAD
-        <div className="flex items-center gap-2 text-xs text-gray-400">
-          <span>{product.sold} terjual</span>
-          <span>•</span>
-          <span>{product.weight}</span>
-=======
         <div className="flex items-center justify-between gap-2 text-[10px] md:text-xs text-gray-400 pt-1 border-t border-gray-50">
           <div className="flex items-center gap-1.5">
             <span className="font-medium text-gray-600 italic">{product.sold} terjual</span>
             <span>•</span>
             <span>{product.weight}</span>
           </div>
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
         </div>
       </div>
     </Link>

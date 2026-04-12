@@ -8,11 +8,7 @@ import { SortOption, Product } from "@/types";
 import { getDiscountedPrice } from "@/lib/utils";
 
 export default function KatalogPage() {
-<<<<<<< HEAD
   const getActiveProducts = useProductStore((state) => state.getActiveProducts);
-=======
-  const products = useProductStore((state) => state.products);
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   const [mounted, setMounted] = useState(false);
   const [currentSort, setCurrentSort] = useState<SortOption>("populer");
   const [displayProducts, setDisplayProducts] = useState<Product[]>([]);
@@ -24,11 +20,7 @@ export default function KatalogPage() {
   useEffect(() => {
     if (!mounted) return;
 
-<<<<<<< HEAD
     let result = [...getActiveProducts()];
-=======
-    let result = products.filter(p => !p.archived);
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
     switch (currentSort) {
       case "populer":
@@ -53,11 +45,7 @@ export default function KatalogPage() {
     }
 
     setDisplayProducts(result);
-<<<<<<< HEAD
   }, [currentSort, mounted, getActiveProducts]);
-=======
-  }, [currentSort, mounted, products]);
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
