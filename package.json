@@ -7,23 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-<<<<<<< HEAD
-    "postinstall": "prisma generate"
-=======
     "postinstall": "prisma generate",
     "seed-admin": "tsx prisma/seed-admin.ts",
     "seed-products": "tsx prisma/seed-products.ts"
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "next": "^15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-=======
     "lucide-react": "^0.474.0",
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
     "zustand": "^5.0.3"
   },
   "devDependencies": {
@@ -35,10 +28,7 @@
     "eslint-config-next": "^15.3.1",
     "prisma": "^6.19.3",
     "tailwindcss": "^4.1.4",
-<<<<<<< HEAD
-=======
     "tsx": "^4.19.2",
->>>>>>> 88cb45f (initial commit: full admin dashboard and dynamic settings)
     "typescript": "^5.8.3"
   }
 }
